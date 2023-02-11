@@ -3,28 +3,48 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
     }
-    html, body {
+html, body {
     background: white;
     margin: 20px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
-    }
-    button {
-        background-color: black;
-        border-radius: 5px;
-        border: 0px;
-        color: white;
-        cursor: pointer;
-        margin-right: 5px;
-        margin-left: 5px;
-        padding: 5px 10px;
-        }
-        button:hover {
-        background-color: #3e4144;
-        }
-        button:focus{
-        outline: none;
-        }
-        .p-1 {
-        padding: 1px;
-        }
+}
+button {
+    background-color: black;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+button:hover {
+    background-color: #3e4144;
+ }
+button:focus{
+   outline: none;
+ }
+.p-1 {
+   padding: 1px;
+}
+h1{
+    color:red;
+}
+.raya{
+    margin: 1em;
+    height: 1px;
+    background-color: #3e414483;
+}
+.titulos, 
+.cnt_lista_form{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 0.5em;
+}

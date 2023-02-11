@@ -1,0 +1,29 @@
+<h2>{{ title }}</h2>
+<div class="raya"></div>
+<div class="titulos">
+  <h3>Personajes</h3>
+  <h3>Agregar nuevo Personaje</h3>
+</div>
+<div class="raya"></div>
+<div class="cnt_lista_form">
+  <app-personajes></app-personajes>
+  <div class="caja_form">
+    <form (ngSubmit)="agregar()">
+      <input
+        type="text"
+        placeholder="Nombre"
+        name="nombre"
+        [(ngModel)]="nuevo.nombre"
+      />
+      <input
+        type="number"
+        placeholder="Poder"
+        name="poder"
+        [(ngModel)]="nuevo.poder"
+      />
+      <div>
+        <button type="submit">Agregar</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="cnt_lista_form">
+  <div class="caja_lista">
+    <ul>
+      <li *ngFor="let personaje of personajes">
+        {{ personaje.nombre }} - {{ personaje.poder | number }}
+      </li>
+    </ul>
+  </div>
+</div>
