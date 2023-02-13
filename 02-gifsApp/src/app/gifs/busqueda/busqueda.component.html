@@ -1,0 +1,16 @@
+<div class="rows p-3">
+  <div class="col">
+    <h5>Buscar</h5>
+    <input
+      type="text"
+      placeholder="Buscar gifs..."
+      class="form-control"
+      (keyup.enter)="buscar()" 
+      #txtBuscar
+
+      />
+
+      <!-- cuando pulsemos el btón ENTER dispara el evento -->
+      <!-- En el evento también podríamos tener la información de la caja de texto, mediante una referencia local llamada "txtBuscar" y mandar ese valor al método buscar (txtBuscar.value) -->
+  </div>
+</div>

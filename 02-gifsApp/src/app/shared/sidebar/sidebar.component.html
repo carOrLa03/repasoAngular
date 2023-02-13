@@ -1,0 +1,15 @@
+<div class="d-flex">
+  <div class="bg-dark border-rigght p-3" id="sidebar">
+    <h2 class="text-light">Aplicación de Gifs</h2>
+    <hr class="text-white" />
+    <div class="list-group list-reset">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action"
+        *ngFor="let gif of gifs"
+        (click)="buscar(gif)"
+        >{{ gif | titlecase }}</a
+      >
+    </div>
+  </div>
+</div>
